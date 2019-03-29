@@ -3,12 +3,46 @@ package _03_polymorphs;
 import java.awt.Graphics;
 
 public abstract class Polymorph {
-    int x;
-    int y;
+    private int x;
+    private int y;
+    private int width = 100;
+    private int height = 100;
     
     Polymorph(int x, int y){
    	 this.x = x;
    	 this.y = y;
+    }
+    
+    public void setX(int xCord) {
+    	this.x = xCord;
+    }
+    
+    public void setY(int yCord) {
+    	this.y = yCord;
+    }
+    
+    public int getX() {
+    	return x;
+    }
+    
+    public int getY() {
+    	return y;
+    }
+    
+    public void setWidth(int width) {
+    	this.width = width;
+    }
+    
+    public void setHeight(int height) {
+    	this.height = height;
+    }
+    
+    public int getWidth() {
+    	return width;
+    }
+    
+    public int getHeight() {
+    	return height;
     }
     
     public void update(){

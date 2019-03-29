@@ -61,9 +61,9 @@ public class EncapsulateTheData {
 
 	public void setClature(String clature) {
 		if (clature.length() == 0) {
-			this.nomenclature.equals(" ");
+			this.nomenclature = " ";
 		} else {
-			this.nomenclature.equals(clature);
+			this.nomenclature = clature;
 		}
 	}
 
@@ -72,8 +72,8 @@ public class EncapsulateTheData {
 	}
 
 	public void setObject(String object) {
-		Object trueObject;
-		trueObject = object;
+		Object trueObject = new Object();
+		trueObject.equals(object);
 		this.memberObj = trueObject;
 	}
 
