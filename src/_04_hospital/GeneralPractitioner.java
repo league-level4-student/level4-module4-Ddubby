@@ -24,7 +24,7 @@ public class GeneralPractitioner extends Doctor {
 	public void doMedicine() {
 		// TODO Auto-generated method stub
 		for (Patient patient : patients) {
-			//Lazy way, fix next time
+			//Lazy way
 			patient.checkPulse();
 		}
 	}
